@@ -1166,29 +1166,46 @@ textarea.input-field {
   .contact-card .card-icon { padding: 15px; }
 
 }
-/* Add this to your existing CSS or in a separate style file */
 
 
 
+/* General styling for blog list */
 .blog-list {
-  list-style: none;   /* Remove list styling */
-  padding: 0;         /* Remove default padding */
-  display: flex;      /* Use flexbox to create a horizontal layout */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  direction: row;
+  margin: 0; /* Remove any default margin */
+
+}
+
+/* Styling for blog items within each container */
+.food-container .blog-item,
+.lifestyle-container .blog-item {
+  flex: 0 0 calc(25% - 10px); 
+  margin-right: 10px; /* Adjust the spacing between images */
+  margin-bottom: 20px; /* Adjust the spacing between rows */
+}
+
+/* Styling for images within each container */
+.food-container .small-image,
+.lifestyle-container .small-image {
+  width: 100%; /* Take up the full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover;
+}
+
+/* Additional styling for Food container */
+.food-container {
+  display: flex; /* Use flexbox to create a horizontal layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
   justify-content: space-between; /* Add space between images */
-  flex-wrap: wrap;    /* Allow items to wrap to the next line */
-
 }
 
-.blog-item {
-  flex: 0 0 calc(33.333% - 10px); /* Calculate the width of each item (3 items in a row) */
-  margin-right: 5px; /* Adjust the spacing between images as needed */
-  margin-bottom: 10px;
-
-}
-
-.small-image {
-  max-width: 100%; /* Make sure the image doesn't exceed its container */
-  height: 80%;  /* Set a fixed height for the images */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-
+/* Additional styling for Lifestyle container */
+.lifestyle-container {
+  /* Add any specific styles for the Lifestyle container if needed */
+  display: flex; /* Use flexbox to create a horizontal layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Add space between images */
 }
