@@ -1,14 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -173,7 +162,9 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.container { padding-inline: 15px; 
+margin-bottom: 20px; /* Adjust the spacing between sections as needed */
+}
 
 .btn {
   max-width: max-content;
@@ -212,7 +203,7 @@ body {
   line-height: 1.2;
 }
 
-.h1 { font-size: var(--fs-1); }
+.h1 { font-size: var(--fs-2); }
 
 .h2 { font-size: var(--fs-2); }
 
@@ -1173,5 +1164,31 @@ textarea.input-field {
   .contact-card { gap: 20px; }
 
   .contact-card .card-icon { padding: 15px; }
+
+}
+/* Add this to your existing CSS or in a separate style file */
+
+
+
+.blog-list {
+  list-style: none;   /* Remove list styling */
+  padding: 0;         /* Remove default padding */
+  display: flex;      /* Use flexbox to create a horizontal layout */
+  justify-content: space-between; /* Add space between images */
+  flex-wrap: wrap;    /* Allow items to wrap to the next line */
+
+}
+
+.blog-item {
+  flex: 0 0 calc(33.333% - 10px); /* Calculate the width of each item (3 items in a row) */
+  margin-right: 5px; /* Adjust the spacing between images as needed */
+  margin-bottom: 10px;
+
+}
+
+.small-image {
+  max-width: 100%; /* Make sure the image doesn't exceed its container */
+  height: 80%;  /* Set a fixed height for the images */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
 
 }
