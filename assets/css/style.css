@@ -266,6 +266,13 @@ margin-bottom: 20px; /* Adjust the spacing between sections as needed */
   font-size: 3.5rem;
   font-weight: var(--fw-700);
   line-height: 1;
+ 
+}
+
+.logo img {
+  width: 230px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 10px; /* Adjust the margin as needed */
 }
 
 .nav-toggle-btn { font-size: 40px; }
@@ -1135,7 +1142,13 @@ textarea.input-field {
 
   .about-item ion-icon { font-size: 20px; }
 
-
+  .card-icon .fab.fa-instagram {
+    display: block;
+    pointer-events: none;
+    flex-shrink: 0;
+    margin-block-start: 5px;
+    font-size: 30px; /* Adjust the size as needed */
+}
 
   /**
    * CTA
@@ -1208,4 +1221,22 @@ textarea.input-field {
   display: flex; /* Use flexbox to create a horizontal layout */
   flex-wrap: wrap; /* Allow items to wrap to the next line */
   justify-content: space-between; /* Add space between images */
+}
+
+
+/* Work section */
+.content {
+  padding: 50px;
+}
+
+.sectionHeading {
+  text-align: center;
+}
+
+.showsNear {
+  padding: 0px 30px 30px 30px;
+}
+
+.cardContainer {
+  text-align: center;
 }
