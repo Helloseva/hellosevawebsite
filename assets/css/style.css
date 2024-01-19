@@ -366,6 +366,7 @@ margin-bottom: 20px; /* Adjust the spacing between sections as needed */
   }
 
   .hero-title,
+  .hero-text,
   .hero-subtitle {
     margin-inline: auto; /* Center the title and subtitle */
     max-width: 80%; /* Adjust the maximum width as needed */
