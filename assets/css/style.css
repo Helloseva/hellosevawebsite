@@ -246,7 +246,7 @@ margin-bottom: 20px; /* Adjust the spacing between sections as needed */
   left: 0;
   width: 100%;
   background-color: var(--white-1);
-  padding-block: 15px;
+  padding-block: 1px;
   border-block-end: 1px solid var(--cultured);
   z-index: 4;
   transition: var(--transition-1);
@@ -297,6 +297,7 @@ margin-bottom: 20px; /* Adjust the spacing between sections as needed */
   max-height: 0;
   visibility: hidden;
   overflow: hidden;
+
 }
 
 .navbar.active {
@@ -358,6 +359,18 @@ margin-bottom: 20px; /* Adjust the spacing between sections as needed */
 }
 
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    text-align: left; /* Align text to the left on smaller screens */
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    margin-inline: auto; /* Center the title and subtitle */
+    max-width: 80%; /* Adjust the maximum width as needed */
+  }
+}
 
 
 
